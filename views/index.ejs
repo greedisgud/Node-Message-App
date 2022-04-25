@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/stylesheets/style.css" />
+
+<div class="messages">
+  <% messages.forEach(message => {%>
+  <div class="message">
+    <%=message.text%>
+    <h3><%=message.user%></h3>
+    <%=message.added%>
+  </div>
+  <%})%>
+</div>
